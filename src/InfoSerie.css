@@ -1,0 +1,42 @@
+h1 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.info-texte {
+    color: #34495e;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.info-date {
+    color: #34495e;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+.info-image {
+    width: 200px;
+    height: 250px;
+}
+
+.card{
+    display: flex;
+
+}
+
+.squelette{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    
+  }

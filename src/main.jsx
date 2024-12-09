@@ -7,6 +7,8 @@ import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import ImageDetail from "./components/InfoSerie.jsx"
 import AddImage from "./components/AddImage.jsx";
+import imagesData from './images.json';
+import Error from './components/Error.jsx'
 
 
 
@@ -31,10 +33,15 @@ const router = createBrowserRouter([
     {
         path:"/ajouterImage",
         element:<AddImage />
+    },
+    {
+        path:"*",
+        element:<Error />
     }
 
 
 ]);
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 <React.StrictMode>

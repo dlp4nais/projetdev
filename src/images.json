@@ -1,0 +1,45 @@
+[
+    {
+        "nom": "BlackMirror",
+        "key": 1,
+        "chemin": "https://fr.web.img4.acsta.net/pictures/18/05/22/15/58/5745341.jpg",
+        "text": "Black Mirror est une série télévisée d’anthologie créée par Charlie Brooker. Chaque épisode est indépendant, avec une histoire, des personnages et des décors différents, mais tous explorent les implications sociales, psychologiques et éthiques des nouvelles technologies et de leur impact sur l'humanité. Mélangeant science-fiction, drame, et satire, la série est connue pour ses récits sombres et ses critiques souvent glaçantes de la société moderne.",
+        "date": "4 Décembre 2011"
+    },
+    {
+        "nom": "Hunter x Hunter",
+        "key": 2,
+        "chemin": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/cbb55a6382682bf71e91f685c6473c5a.jpg",
+        "text":"Hunter x Hunter est une série de manga et d'anime créée par Yoshihiro Togashi. C'est une œuvre d'aventure, de fantasy et d'action qui se distingue par son univers complexe, ses personnages bien développés et son approche intelligente des combats et des intrigues.",
+        "date":"3 Mars 1998"
+    },
+    {
+        "nom": "Malcom",
+        "key": 4,
+        "chemin": "https://cache.cosmopolitan.fr/data/photo/w1000_c17/160/malcolm-big.jpg",
+        "text":"Malcolm ou Malcolm in the Middle est une série télévisée américaine culte des années 2000, mêlant comédie et tranches de vie. Créée par Linwood Boomer, elle raconte les aventures hilarantes et souvent chaotiques d'une famille américaine dysfonctionnelle mais attachante, vue à travers les yeux de Malcolm, l’enfant surdoué de la famille.",
+        "date":"14 Mai 2006"
+    },
+    {
+        "nom": "Shameless",
+        "key": 5,
+        "chemin": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp0O9GZ9jO1Cs3-w3-NdetzmQ-BXn4i-_djw&s",
+        "text":"Shameless est une série télévisée dramatique et comique créée par Paul Abbott. Elle existe en deux versions : une originale britannique et une adaptation américaine, la plus célèbre, développée par John Wells. La série suit les mésaventures de la famille Gallagher, une famille dysfonctionnelle vivant dans un quartier pauvre.",
+        "date":"9 Janvier 2011"
+    },
+    {
+        "nom": "Smallville",
+        "key": 6,
+        "chemin": "https://www.ecranlarge.com/content/uploads/2019/11/dc9a9n4g9ibs485t5ebtyng0mcr-655-scaled.jpg",
+        "text":"Smallville est une série télévisée américaine créée par Alfred Gough et Miles Millar. Elle revisite la jeunesse de Clark Kent, futur Superman, dans la petite ville fictive de Smallville, au Kansas. La série explore ses origines, ses premières découvertes de ses super-pouvoirs et les défis qu’il doit relever avant de devenir le célèbre héros.",
+        "date":"16 Octobre 2001"
+    },
+    {
+        "nom": "The Office",
+        "key": 7,
+        "chemin": "https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "text":"The Office est une sitcom très populaire tournée dans un style de faux documentaire. Elle suit le quotidien des employés d’une entreprise fictive de papier, Dunder Mifflin, située à Scranton, en Pennsylvanie. La série est connue pour son humour décalé, ses situations de bureau familières et ses personnages attachants, qui oscillent entre moments hilarants et touchants.",
+        "date":"24 Mars 2005"
+
+    }
+]

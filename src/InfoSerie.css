@@ -1,3 +1,8 @@
+body{
+    background-color: gainsboro;
+}
+
+
 h1 {
     color: #2c3e50;
     font-size: 2em;
@@ -22,21 +27,90 @@ h1 {
     height: 250px;
 }
 
-.card{
-    display: flex;
-
-}
 
 .squelette{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
+    
 
 }
 
 .card{
     display: flex;
     flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+
     
-  }
+}
+
+.aPropos{
+    display : flex;
+    justify-content : center;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color : black;
+    padding: 100px;
+
+
+}
+
+.titre{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+    padding: 150px;
+}
+
+.home{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+    padding: 150px;
+}
+
+.accueil{
+    display : flex;
+    justify-content : center;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color : black;
+    padding: 100px;
+    font-size: 25px;
+
+
+}
+
+.topnav {
+    overflow: hidden;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.bienvenue{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+    padding: 1px;
+}
+
+.images{
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+}
+
+

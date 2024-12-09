@@ -1,66 +1,69 @@
 import ImageItem from './Image.jsx'
-import React, { useState } from 'react'
-import images from '../images.jsx'
+import React, {useState} from 'react';
 import '../index.css';
 import '../InfoSerie.css';
 
-
-
 export default function Home(){
+    
 
-    const [imageList,setImageList] = useState(images);
+    const storedImages = JSON.parse(localStorage.getItem('images'));
+    const [imageList,setImageList] = useState(storedImages);
 
+    //barre de recherche
     function searchImage(e){
 
         if(e.target.value == ""){
-            setImageList(images)
+            setImageList(storedImages)
         }else{    
-            setImageList(images.filter((img)=> img.nom.toUpperCase().includes(e.target.value.toUpperCase())))        
+            setImageList(storedImages.filter((img)=> img.nom.toUpperCase().includes(e.target.value.toUpperCase())))        
         }
     }
 
-
- /*    function handleAddImage(e){
-        let imageFile = fs.readFileSync("../images.jsx")
-        let imageEditor = JSON.parse(imageFile);
+    //ajouter une image
+     function handleAddImage(e){
+        let key = imageList.length + 1;
 
         let imageData = {
-            nom:e.target.imagename.value,
-            key:8,
+            nom:e.target.imagetitle.value,
+            key:key,
             chemin:e.target.imageurl.value,
             text:e.target.imagedesc.value,
             date:e.target.imagedate.value,
-        }
-        imageEditor.push(imageData)
-        let newJSON = JSON.stringify(imageEditor)
-        //fs.writeFile("../images.jsx", newJSON, err => {
-          //  if(err) throw err;
-        //} )
+        }      
+        const updatedImageList = imageList.concat(imageData);
+        setImageList(updatedImageList);
+        localStorage.setItem('images', JSON.stringify(updatedImageList));       //setImageList() 
+    }
 
-        //setImageList(imageList.concat(imageData))
-        console.log(e.target.imagename)
     
-        //setImageList() */
-    
-
+    //le "html" pour ajouter une image
     return <>
 
-        <h1>Bienvenue sur la page accueil de notre super site</h1>
-        <input placeholder='Rechercher' id="searchinput" defaultValue="" onChange={searchImage}/>
-        <div className="squelette">
+        <h1 className='bienvenue'>Bienvenue sur Netflux</h1>
+        <input  className = "topnav" placeholder='Rechercher' id="searchinput" defaultValue="" onChange={searchImage}/>
+        <form onSubmit={handleAddImage}>
+            <label htmlFor='imagename'>Nom de la série:</label>
+            <input type='text' id='imagetitle' name='imagetitle' required/>
 
+            <label htmlFor='imageurl'>URL de la série:</label>
+            <input type='text' id='imageurl' name='imageurl' required/>
+
+            <label htmlFor='imagedesc'>Description série:</label>
+            <input type='text' id='imagedesc' name='imagedesc' required/>
+
+            <label htmlFor='imagedate'>Date de sortie:</label>
+            <input type='date' id='imagedate' name='imagedate' required/>
+
+            <button type='submit'>Ajouter la série</button>
+        </form>
+        
+        
+        <div className="squelette">
         {imageList.map((image) => (
             <ImageItem key={image.key} image = {image}></ImageItem>
         ))
         }
-  {/*       <form onSubmit={handleAddImage}>
-            <input type='text' id='imagename'/>
-            <input type='text' id='imageurl'/>
-            <input type='text' id='imagedesc'/>
-            <input type='text' id='imagedate'/>
-
-            <button type='submit'></button>
-        </form> */}
+        <div style={{ display: 'flex', flexDirection: 'column' }}></div>
         </div>
 
 

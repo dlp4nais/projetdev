@@ -6,12 +6,11 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import ImageDetail from "./components/InfoSerie.jsx"
-import AddImage from "./components/AddImage.jsx";
 import imagesData from './images.json';
 import Error from './components/Error.jsx'
 
 
-
+//routage
 const router = createBrowserRouter([
 {
     path: "/",
@@ -21,7 +20,6 @@ const router = createBrowserRouter([
         path: "/home",
         element: <Home />,
     },
-
     {
         path: "/about",
         element: <About />,
@@ -29,10 +27,6 @@ const router = createBrowserRouter([
     {
         path: "/imageDetail/:id",
         element: <ImageDetail/>
-    },
-    {
-        path:"/ajouterImage",
-        element:<AddImage />
     },
     {
         path:"*",

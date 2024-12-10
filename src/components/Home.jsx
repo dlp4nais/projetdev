@@ -45,7 +45,7 @@ export default function Home(){
             <label htmlFor='imagename'>Nom de la série:</label>
             <input type='text' id='imagetitle' name='imagetitle' required/>
 
-            <label htmlFor='imageurl'>URL de la série:</label>
+            <label htmlFor='imageurl'>URL de l'image:</label>
             <input type='text' id='imageurl' name='imageurl' required/>
 
             <label htmlFor='imagedesc'>Description série:</label>

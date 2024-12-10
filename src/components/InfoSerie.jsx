@@ -12,10 +12,8 @@ export default function InfoSerie(){
     const location = useLocation(); 
     const pathname = location.pathname;
     const match = pathname.match(/\/imageDetail\/(\d+)/);
-    const id = match[1];  
-    console.log("ID récupéré avec useLocation:", id);
+    const id = match[1]; 
     const image = images.find(image => image.key == parseInt(id));
-    console.log("image",image)
     return <>
 
         <h1>{image.nom}</h1>
